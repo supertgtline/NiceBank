@@ -1,6 +1,9 @@
 package nicebank;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import org.testng.Assert;
+import support.KnowsTheDomain;
 
 public class AccountSteps {
     KnowsTheDomain helper;

@@ -1,10 +1,10 @@
 package nicebank;
 
 import io.cucumber.java.en.When;
+import support.KnowsTheDomain;
 
 public class TellerSteps {
     KnowsTheDomain helper;
-
     public TellerSteps(KnowsTheDomain helper) {
         this.helper = helper;
     }
