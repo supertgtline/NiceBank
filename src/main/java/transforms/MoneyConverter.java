@@ -1,7 +1,6 @@
 package transforms;
 
 import nicebank.Money;
-
 public class MoneyConverter extends Transformer<Money> {
     public Money transform(String amount) {
         String[] numbers = amount.substring(1).split("\\.");

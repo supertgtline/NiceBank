@@ -1,6 +1,6 @@
 package nicebank;
 
-import io.cucumber.java.en.When;
+import cucumber.api.java.en.When;
 import support.KnowsTheDomain;
 
 public class TellerSteps {

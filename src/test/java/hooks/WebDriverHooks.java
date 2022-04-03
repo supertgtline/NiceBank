@@ -1,7 +1,7 @@
 package hooks;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Scenario;
+import cucumber.api.Scenario;
+import org.junit.After;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriverException;
 import support.KnowsTheDomain;

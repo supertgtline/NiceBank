@@ -1,7 +1,7 @@
 package hooks;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import nicebank.AtmServer;
 import support.KnowsTheDomain;
 

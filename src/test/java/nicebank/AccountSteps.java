@@ -1,10 +1,11 @@
 package nicebank;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import org.testng.Assert;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import org.junit.Assert;
 import support.KnowsTheDomain;
 import transforms.MoneyConverter;
+import cucumber.api.Transform;
 
 public class AccountSteps {
     KnowsTheDomain helper;
@@ -18,15 +19,17 @@ public class AccountSteps {
             @Transform(MoneyConverter.class) Money amount)
             throws Throwable {
         helper.getMyAccount().credit(amount);
-
-        Assert.assertEquals("Incorrect account balance -",
-                amount, helper.getMyAccount().getBalance());
     }
 
     @Then("^the balance of my account should be (\\$\\d+\\.\\d+)$")
     public void theBalanceOfMyAccountShouldBe$(
             @Transform(MoneyConverter.class) Money amount)
             throws Throwable {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         Assert.assertEquals("Incorrect account balance -",
                 amount, helper.getMyAccount().getBalance());
