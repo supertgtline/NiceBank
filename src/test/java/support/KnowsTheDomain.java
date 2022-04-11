@@ -1,7 +1,6 @@
 package support;
 
 import nicebank.Account;
-import nicebank.AtmUserInterface;
 import nicebank.CashSlot;
 import nicebank.Teller;
 
